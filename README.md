@@ -67,6 +67,50 @@ Os testes automatizados em `tests/test_cases.py`, executados com `python -m unit
 
 O script `tests/performance_test.py` gera uma entrada com 200.000 cidades e 200.000 estradas, executa `src/main.py` como um processo separado e verifica que a saída é `0`. O teste foi aprovado, com tempo medido de aproximadamente **0,374 segundos**.
 
+## Como executar
+
+**Requisito:** Python 3 instalado.
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/Guilherme-Inacio/ilhas-conectividade.git
+```
+
+2. Entre na pasta:
+
+```bash
+cd ilhas-conectividade
+```
+
+3. Execute o programa:
+
+```bash
+python src/main.py
+```
+
+4. Informe os dados pela entrada padrão (stdin). Exemplo:
+
+```text
+5 2
+1 2
+3 4
+```
+
+Saída esperada:
+
+```text
+8
+```
+
+**Como executar os testes automatizados:**
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Não é necessário instalar bibliotecas externas. O projeto utiliza apenas a biblioteca padrão do Python.
+
 ## Tecnologias
 
 - Python 3
